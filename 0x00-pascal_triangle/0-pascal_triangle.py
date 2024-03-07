@@ -4,6 +4,9 @@
 
 def pascal_triangle(n):
     triangle = []
+
+    if n <= 0:
+        return []
     for rows in range(n):
         row = [None for i in range(rows + 1)]
         row[0], row[-1] = 1, 1
