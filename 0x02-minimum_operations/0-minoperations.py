@@ -25,7 +25,7 @@ def minOperations(n):
             note_pad += content
             content += note_pad
             num_ops += 2
-        else:
+        elif note_pad > 0:
             content += note_pad
             num_ops += 1
 
