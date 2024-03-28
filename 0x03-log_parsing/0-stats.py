@@ -24,7 +24,8 @@ if __name__ == "__main__":
     log = {}
     log["file_size"] = 0
     log["code_frequency"] = {
-        str(code): 0 for code in [200, 301, 400, 401, 403, 404, 405, 500]}
+        str(code): 0 for code in [
+            200, 301, 400, 401, 403, 404, 405, 500]}
 
     try:
         for line in sys.stdin:
