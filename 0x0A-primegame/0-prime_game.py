@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+"""Prime game module.
+"""
 
 
 def is_prime(n):
+    """ Check if the given input is a prime numeber
+    """
     if n <= 1:
         return False
     for i in range(2, int(n ** 0.5) + 1):
@@ -11,6 +15,8 @@ def is_prime(n):
 
 
 def primepicker(numlist):
+    """ Picks a prime number from the given list numlist
+    """
     picked_prime = 0
     for ele in numlist:
         if is_prime(ele):
@@ -20,6 +26,10 @@ def primepicker(numlist):
 
 
 def isWinner(x, nums):
+    """Determines the winner of a prime game session with `x` rounds.
+    """
+    if x < 1 or not nums:
+        return None
     b = 0
     m = 0
 
