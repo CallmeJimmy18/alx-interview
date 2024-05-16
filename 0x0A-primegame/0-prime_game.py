@@ -62,5 +62,5 @@ def isWinner(x, nums):
         return "Ben"
     elif m > b:
         return "Maria"
-    else:
+    elif b == m:
         return None
